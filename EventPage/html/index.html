@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Page</title>
+    <link rel="stylesheet" href="/EventPage/assets/css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <!-- SLIDER PARALLAX -->
+    <section class="slider">
+        <img src="/EventPage/assets/img/1.png" alt="" id="slider__img1">
+        <img src="/EventPage/assets/img/2.png" alt="" id="slider__img2">
+        <img src="/EventPage/assets/img/5.png" alt="" id="slider__img5">
+        <img src="/EventPage/assets/img/6.png" alt="" id="slider__img6">
+        <h2 id="slider__text">ĐIỆN BIÊN PHỦ</h2>
+        <img src="/EventPage/assets/img/4.png" alt="" id="slider__img4">
+        <img src="/EventPage/assets/img/3.png" alt="" id="slider__img3">
+    </section>
+    <!-- CONTENT -->
+    <!-- FOOTER -->
+    <script>
+        let text = document.getElementById("slider__text");
+        let slider__img1 = document.getElementById("slider__img1");
+        let slider__img2 = document.getElementById("slider__img2");
+        let slider__img3 = document.getElementById("slider__img3");
+        let slider__img4 = document.getElementById("slider__img4");
+        let slider__img5 = document.getElementById("slider__img5");
+        let slider__img6 = document.getElementById("slider__img6");
+        
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+            text.style.marginTop = value * 2.5 + 'px';
+            slider__img2.style.marginTop = value * -1.5 + 'px';
+        });
+    </script>
+    <script src="/EventPage/assets/js/script.js"></script>
+</body>
+
+</html>
