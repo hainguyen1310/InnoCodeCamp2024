@@ -6,37 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Page</title>
     <link rel="stylesheet" href="/EventPage/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!-- HEADER -->
     <!-- SLIDER PARALLAX -->
     <section class="slider">
-        <img src="/EventPage/assets/img/1.png" alt="" id="slider__img1">
-        <img src="/EventPage/assets/img/2.png" alt="" id="slider__img2">
-        <img src="/EventPage/assets/img/5.png" alt="" id="slider__img5">
         <img src="/EventPage/assets/img/6.png" alt="" id="slider__img6">
-        <h2 id="slider__text">ĐIỆN BIÊN PHỦ</h2>
+        <img src="/EventPage/assets/img/1.png" alt="" id="slider__img1">
+        <img src="/EventPage/assets/img/8.png" alt="" id="slider__img8">
+        <img src="/EventPage/assets/img/5.png" alt="" id="slider__img5">
         <img src="/EventPage/assets/img/4.png" alt="" id="slider__img4">
+        <h2 id="slider__text">ĐIỆN BIÊN PHỦ</h2>
         <img src="/EventPage/assets/img/3.png" alt="" id="slider__img3">
     </section>
     <!-- CONTENT -->
+    <div id="content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione laudantium in assumenda natus soluta, quam
+            laboriosam quas praesentium nesciunt incidunt excepturi omnis quo quod possimus odit provident, nisi
+            pariatur officiis?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae minima laborum architecto adipisci ipsam.
+            Laborum laudantium temporibus necessitatibus quidem animi maiores magnam, accusamus beatae saepe illum
+            asperiores sunt reiciendis esse.</p>
+    </div>
     <!-- FOOTER -->
-    <script>
-        let text = document.getElementById("slider__text");
-        let slider__img1 = document.getElementById("slider__img1");
-        let slider__img2 = document.getElementById("slider__img2");
-        let slider__img3 = document.getElementById("slider__img3");
-        let slider__img4 = document.getElementById("slider__img4");
-        let slider__img5 = document.getElementById("slider__img5");
-        let slider__img6 = document.getElementById("slider__img6");
-        
-        window.addEventListener('scroll', () => {
-            let value = window.scrollY;
-            text.style.marginTop = value * 2.5 + 'px';
-            slider__img2.style.marginTop = value * -1.5 + 'px';
-        });
-    </script>
+
     <script src="/EventPage/assets/js/script.js"></script>
 </body>
 
