@@ -21,8 +21,8 @@
                 before:*:origin-left 
                 hover:before:*:scale-100
             ">
-      <label id="toggle-1" for="radio-1">Thời Kỳ Lịch Sử</label>
-      <label id="toggle-2" for="radio-2">Nhân Vật Lịch Sử</label>
+      <label id="toggle-1" for="radio-1" data-radio="radio-1">Thời Kỳ Lịch Sử</label>
+      <label id="toggle-2" for="radio-2" data-radio="radio-2">Nhân Vật Lịch Sử</label>
     </nav>
 
     <section class="grid [grid-template-areas:'stack']  mt-8
@@ -168,4 +168,17 @@
 
   </div>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.querySelectorAll('nav label').forEach(label => {
+        label.addEventListener('mouseover', () => {
+            const radioId = label.getAttribute('data-radio');
+            document.getElementById(radioId).checked = true;
+        });
+
+        label.addEventListener('mouseout', () => {
+            const radioId = label.getAttribute('data-radio');
+            document.getElementById(radioId).checked = false;
+        });
+    });
+</script>
 </body>
