@@ -34,23 +34,7 @@ html {
 .navbar {
     display: flex;
     align-items: center;
-}
-
-.navbar a,
-.dropdown .dropbtn {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 14px 20px;
-    border: none;
-    cursor: pointer;
     font-size: 16px;
-}
-
-.dropbtn {
-    align-items: center;
-    display: flex;
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-    /* Thêm hiệu ứng chuyển động nhẹ nhàng */
 }
 
 .navbar a:hover,
@@ -81,35 +65,9 @@ html {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    /* Thêm hiệu ứng chuyển động nhẹ nhàng */
-    transform: translateY(10px);
-    /* Dịch chuyển vị trí dropdown để hiệu ứng mượt mà hơn */
-}
-
-.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    /* Nền trong suốt khi hover */
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-    /* Trả vị trí về chỗ cũ khi hover */
-}
-
-.dropbtn:hover i{
-    transform: scale(1) rotate(180deg);
-}
-
 .app-desktop-search-control {
     align-items: center;
     box-sizing: border-box;
@@ -161,4 +119,7 @@ html {
 .search-form:focus-within {
     border: none;
     box-shadow: 0 0 0 2px #000000, 0 3px 6px rgba(0, 0, 0, .08);
+}
+.mt-8 {
+    margin-top: 1px;
 }
