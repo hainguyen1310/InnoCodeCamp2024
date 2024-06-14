@@ -46,3 +46,18 @@ observer.observe(slider);
 
 let contentObserver = new IntersectionObserver(hideImagesCallback, options);
 contentObserver.observe(content);
+
+//content
+document.addEventListener("scroll", function() {
+    const scrolled = window.pageYOffset;
+    const backgroundLeft = document.querySelector(".content__img--honghactrai");
+    const backgroundRight = document.querySelector(".content__img--honghacphai");
+    const translateXLeft = -200 + scrolled * 0.3; // Start off-screen and move into view from the left
+    const translateXRight = 300 - scrolled * 0.3; // Start off-screen and move into view from the right
+    const rotateZ = 0; 
+
+    backgroundLeft.style.transform = `translate3d(${translateXLeft}%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${rotateZ}deg) skew(0deg, 0deg)`;
+    backgroundRight.style.transform = `translate3d(${translateXRight}%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${rotateZ}deg) skew(0deg, 0deg)`;
+});
+
+
