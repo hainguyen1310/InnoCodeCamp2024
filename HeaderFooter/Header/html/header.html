@@ -154,7 +154,7 @@
 
             <!-- ligning -->
             <input type="radio" id="radio-2" name="panel-toggle" class="sr-only">
-            <article id="panel-1" class="panel">
+            <article id="panel-2" class="panel">
                 <div>
                     <h3>Interior</h3>
                     <ul>
@@ -195,14 +195,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         document.querySelectorAll('nav label').forEach(label => {
-            label.addEventListener('mouseover', () => {
-                const radioId = label.getAttribute('data-radio');
+            const radioId = label.getAttribute('data-radio');
+            const panelId = `panel-${radioId.split('-')[1]}`;
+            const panel = document.getElementById(panelId);
+
+            let isHoveredLabel = false;
+            let isHoveredPanel = false;
+
+            const showPanel = () => {
                 document.getElementById(radioId).checked = true;
+                panel.classList.add('show');
+            };
+
+            const hidePanel = () => {
+                if (!isHoveredLabel && !isHoveredPanel) {
+                    document.getElementById(radioId).checked = false;
+                    panel.classList.remove('show');
+                }
+            };
+
+            label.addEventListener('mouseover', () => {
+                isHoveredLabel = true;
+                showPanel();
             });
-    
+
             label.addEventListener('mouseout', () => {
-                const radioId = label.getAttribute('data-radio');
-                document.getElementById(radioId).checked = false;
+                isHoveredLabel = false;
+                setTimeout(hidePanel, 200);
+            });
+
+            panel.addEventListener('mouseover', () => {
+                isHoveredPanel = true;
+                showPanel();
+            });
+
+            panel.addEventListener('mouseout', () => {
+                isHoveredPanel = false;
+                setTimeout(hidePanel, 200);
             });
         });
     </script>

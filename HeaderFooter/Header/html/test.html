@@ -1,6 +1,22 @@
-<body>
-  <div class="bg-white/50 backdrop-blur-md ring ring-black/5 p-8 w-full max-w-5xl rounded-xl shadow-2xl shadow-purple-300 ">
-    <nav class="flex flex-wrap gap-0 text-sm
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Panels</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .show {
+            display: block;
+        }
+        .panel {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-t from-purple-300 to-purple-100 flex flex-col gap-12 items-center justify-center min-h-screen p-4">
+    <div class="bg-white/50 backdrop-blur-md ring ring-black/5 p-8 w-full max-w-5xl rounded-xl shadow-2xl shadow-purple-300 ">
+        <nav class="flex flex-wrap gap-0 text-sm
                 *:py-2
                 *:px-4
                 *:relative
@@ -21,11 +37,11 @@
                 before:*:origin-left 
                 hover:before:*:scale-100
             ">
-      <label id="toggle-1" for="radio-1" data-radio="radio-1">Thời Kỳ Lịch Sử</label>
-      <label id="toggle-2" for="radio-2" data-radio="radio-2">Nhân Vật Lịch Sử</label>
-    </nav>
+            <label id="toggle-1" for="radio-1" data-radio="radio-1">Thời Kỳ Lịch Sử</label>
+            <label id="toggle-2" for="radio-2" data-radio="radio-2">Nhân Vật Lịch Sử</label>
+        </nav>
 
-    <section class="grid [grid-template-areas:'stack']  mt-8
+        <section class="grid [grid-template-areas:'stack']  mt-8
                 [&>article]:[grid-area:stack]
                 [&>article]:transition-all
                 [&>article]:duration-500
@@ -69,116 +85,113 @@
                 before:[&_a]:ease-in-out
                 hover:before:[&_a]:inset-0
             ">
-      <!-- furniture -->
-      <input type="radio" id="radio-1" name="panel-toggle" class="sr-only">
-      <article id="panel-1">
-        <div>
-          <h3>Living Room</h3>
-          <ul>
-            <li><a href="#">Sofas</a></li>
-            <li><a href="#">Coffee Tables</a></li>
-            <li><a href="#">TV Stands</a></li>
-            <li><a href="#">Bookshelves</a></li>
-            <li><a href="#">Rugs</a></li>
-            <li><a href="#">Curtains</a></li>
-            <li><a href="#">Lamps</a></li>
-            <li><a href="#">Wall Art</a></li>
-            <li><a href="#">Chairs</a></li>
-          </ul>
-        </div>
+            <!-- furniture -->
+            <input type="radio" id="radio-1" name="panel-toggle" class="sr-only">
+            <article id="panel-1" class="panel">
+                <div>
+                    <h3>Living Room</h3>
+                    <ul>
+                        <li><a href="#">Sofas</a></li>
+                        <li><a href="#">Coffee Tables</a></li>
+                        <li><a href="#">TV Stands</a></li>
+                        <li><a href="#">Bookshelves</a></li>
+                        <li><a href="#">Rugs</a></li>
+                        <li><a href="#">Curtains</a></li>
+                        <li><a href="#">Lamps</a></li>
+                        <li><a href="#">Wall Art</a></li>
+                        <li><a href="#">Chairs</a></li>
+                    </ul>
+                </div>
 
-        <div>
-          <h3>Kitchen</h3>
-          <ul>
-            <li><a href="#">Cookware</a></li>
-            <li><a href="#">Cutlery</a></li>
-            <li><a href="#">Appliances</a></li>
-            <li><a href="#">Storage Solutions</a></li>
-            <li><a href="#">Dining Tables</a></li>
-            <li><a href="#">Chairs</a></li>
-            <li><a href="#">Kitchen Islands</a></li>
-            <li><a href="#">Tableware</a></li>
-          </ul>
-        </div>
+                <div>
+                    <h3>Kitchen</h3>
+                    <ul>
+                        <li><a href="#">Cookware</a></li>
+                        <li><a href="#">Cutlery</a></li>
+                        <li><a href="#">Appliances</a></li>
+                        <li><a href="#">Storage Solutions</a></li>
+                        <li><a href="#">Dining Tables</a></li>
+                        <li><a href="#">Chairs</a></li>
+                        <li><a href="#">Kitchen Islands</a></li>
+                        <li><a href="#">Tableware</a></li>
+                    </ul>
+                </div>
 
-        <div>
-          <h3>Bedroom</h3>
-          <ul>
-            <li><a href="#">Beds</a></li>
-            <li><a href="#">Wardrobes</a></li>
-            <li><a href="#">Dressers</a></li>
-            <li><a href="#">Nightstands</a></li>
-            <li><a href="#">Bedding</a></li>
-            <li><a href="#">Mirrors</a></li>
-            <li><a href="#">Lamps</a></li>
-          </ul>
-        </div>
+                <div>
+                    <h3>Bedroom</h3>
+                    <ul>
+                        <li><a href="#">Beds</a></li>
+                        <li><a href="#">Wardrobes</a></li>
+                        <li><a href="#">Dressers</a></li>
+                        <li><a href="#">Nightstands</a></li>
+                        <li><a href="#">Bedding</a></li>
+                        <li><a href="#">Mirrors</a></li>
+                        <li><a href="#">Lamps</a></li>
+                    </ul>
+                </div>
 
-        <div>
-          <h3>Entrance & Hallways</h3>
-          <ul>
-            <li><a href="#">Console Tables</a></li>
-            <li><a href="#">Coat Racks</a></li>
-            <li><a href="#">Shoe Storage</a></li>
-            <li><a href="#">Mirrors</a></li>
-            <li><a href="#">Rugs</a></li>
-            <li><a href="#">Lighting</a></li>
-          </ul>
-        </div>
+                <div>
+                    <h3>Entrance & Hallways</h3>
+                    <ul>
+                        <li><a href="#">Console Tables</a></li>
+                        <li><a href="#">Coat Racks</a></li>
+                        <li><a href="#">Shoe Storage</a></li>
+                        <li><a href="#">Mirrors</a></li>
+                        <li><a href="#">Rugs</a></li>
+                        <li><a href="#">Lighting</a></li>
+                    </ul>
+                </div>
+            </article>
 
-      </article>
+            <!-- lighting -->
+            <input type="radio" id="radio-2" name="panel-toggle" class="sr-only">
+            <article id="panel-2" class="panel">
+                <div>
+                    <h3>Interior</h3>
+                    <ul>
+                        <li><a href="#">Ceiling Lights</a></li>
+                        <li><a href="#">Pendant Lights</a></li>
+                        <li><a href="#">Chandeliers</a></li>
+                        <li><a href="#">Recessed Lighting</a></li>
+                        <li><a href="#">Track Lighting</a></li>
+                        <li><a href="#">Wall Sconces</a></li>
+                        <li><a href="#">Table Lamps</a></li>
+                        <li><a href="#">Floor Lamps</a></li>
+                        <li><a href="#">Under Cabinet Lighting</a></li>
+                        <li><a href="#">Accent Lighting</a></li>
+                    </ul>
+                </div>
 
-      <!-- ligning -->
-      <input type="radio" id="radio-2" name="panel-toggle" class="sr-only">
-      <article id="panel-1">
-        <div>
-          <h3>Interior</h3>
-          <ul>
-            <li><a href="#">Ceiling Lights</a></li>
-            <li><a href="#">Pendant Lights</a></li>
-            <li><a href="#">Chandeliers</a></li>
-            <li><a href="#">Recessed Lighting</a></li>
-            <li><a href="#">Track Lighting</a></li>
-            <li><a href="#">Wall Sconces</a></li>
-            <li><a href="#">Table Lamps</a></li>
-            <li><a href="#">Floor Lamps</a></li>
-            <li><a href="#">Under Cabinet Lighting</a></li>
-            <li><a href="#">Accent Lighting</a></li>
-          </ul>
-        </div>
+                <div>
+                    <h3>Exterior</h3>
+                    <ul>
+                        <li><a href="#">Outdoor Wall Lights</a></li>
+                        <li><a href="#">Outdoor Ceiling Lights</a></li>
+                        <li><a href="#">Landscape Lighting</a></li>
+                        <li><a href="#">Pathway Lights</a></li>
+                        <li><a href="#">Deck & Step Lights</a></li>
+                        <li><a href="#">Outdoor Post Lights</a></li>
+                        <li><a href="#">Security Lights</a></li>
+                        <li><a href="#">Flood Lights</a></li>
+                        <li><a href="#">String Lights</a></li>
+                        <li><a href="#">Solar Lights</a></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script>
+        document.querySelectorAll('nav label' ).forEach(label => {
+            label.addEventListener('mouseover', () => {
+                const radioId = label.getAttribute('data-radio');
+                document.getElementById(radioId).checked = true;
+            });
 
-        <div>
-          <h3>Exterior</h3>
-          <ul>
-            <li><a href="#">Outdoor Wall Lights</a></li>
-            <li><a href="#">Outdoor Ceiling Lights</a></li>
-            <li><a href="#">Landscape Lighting</a></li>
-            <li><a href="#">Pathway Lights</a></li>
-            <li><a href="#">Deck & Step Lights</a></li>
-            <li><a href="#">Outdoor Post Lights</a></li>
-            <li><a href="#">Security Lights</a></li>
-            <li><a href="#">Flood Lights</a></li>
-            <li><a href="#">String Lights</a></li>
-            <li><a href="#">Solar Lights</a></li>
-          </ul>
-        </div>
-
-      </article>
-    </section>
-
-  </div>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    document.querySelectorAll('nav label').forEach(label => {
-        label.addEventListener('mouseover', () => {
-            const radioId = label.getAttribute('data-radio');
-            document.getElementById(radioId).checked = true;
+            label.addEventListener('click', () => {
+                const radioId = label.getAttribute('data-radio');
+                document.getElementById(radioId).checked = false;
+            });
         });
-
-        label.addEventListener('mouseout', () => {
-            const radioId = label.getAttribute('data-radio');
-            document.getElementById(radioId).checked = false;
-        });
-    });
-</script>
+    </script>
 </body>
+</html>
