@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width:1023.98px) {
+    :root {
+        --container: 730px
+    }
+}
+
+@media (min-width:1024px) and (max-width:1309.98px) {
+    :root {
+        --container: 980px
+    }
+}
+
+@media (min-width:1310px) {
+    :root {
+        --container: 1290px
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.text-header {
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #C3423F !important;
+}
+
+.text-title {
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #C3413F !important;
+}
+
+.text-content {
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #121212 !important;
+}
+
+.zone-1 {
+    /* padding-top: 360px; */
+    padding-bottom: 200px;
+    background: url(../img/dbp/bg-page-2.png) center top -20px / 1920px auto no-repeat;
+}
+
+.zone-1>.container {
+    position: relative;
+}
+
+.container {
+    width: var(--container);
+    min-width: var(--container);
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.zone-1 .slider {
+    display: grid;
+    justify-content: center;
+    max-width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.zone-1 .slider .slider__day {
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 80px;
+    transform: skew(-24deg);
+    /* margin-top: -200px; */
+    margin-left: 0;
+    width: 980px;
+}
+
+.slider .slider__day .swiper-wrapper {
+    padding-left: 35px;
+}
+
+.zone-1 .slider .slider__day .slider__item {
+    width: 126px;
+    height: 255px;
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    overflow: hidden;
+    padding: 1em;
+    overflow: hidden
+}
+
+.zone-1 .slider .slider__day .slider__item:before {
+    content: "";
+    width: 280px;
+    height: 255px;
+    display: block;
+    position: absolute;
+    transform: skew(24deg);
+    opacity: .8;
+    background-size: cover !important;
+}
+
+.zone-1 .slider .slider__day .slider__item:nth-child(1):before {
+    background: url(../img/dbp/day-01.png) center center no-repeat
+}
+
+.zone-1 .slider .slider__day .slider__item:nth-child(2):before {
+    background: url(../img/dbp/day-02.png) center center no-repeat
+}
+
+.zone-1 .slider .slider__day .slider__item:nth-child(3):before {
+    background: url(../img/dbp/day-03.png) center center no-repeat
+}
+
+.zone-1 .slider .slider__day .slider__item:nth-child(4):before {
+    background: url(../img/dbp/day-04.png) center center no-repeat
+}
+
+.zone-1 .slider .slider__day .slider__item:nth-child(5):before {
+    background: url(../img/dbp/day-05.png) center center no-repeat
+}
+
+.zone-1 .slider .slider__day .slider__item:nth-child(6):before {
+    background: url(../img/dbp/day-06.png) center center no-repeat
+}
+
+.zone-1 .slider .slider__day .slider__item:nth-child(7):before {
+    background: url(../img/dbp/day-07.png) center center no-repeat
+}
+
+.zone-1 .slider .slider__day .slider__item:nth-last-child(1):before {
+    background: url(../img/dbp/day-07.png) center center no-repeat
+}
+
+.zone-1 .slider .slider__day .slider__item:nth-last-child(2):before {
+    background: url(../img/dbp/day-06.png) center center no-repeat
+}
+
+.zone-1 .slider .slider__day .slider__item:nth-last-child(3):before {
+    background: url(../img/dbp/day-05.png) center center no-repeat
+}
+
+.zone-1 .slider .slider__day .slider__item:nth-last-child(4):before {
+    background: url(../img/dbp/day-04.png) center center no-repeat
+}
+
+.zone-1 .slider .slider__day .slider__item:nth-last-child(5):before {
+    background: url(../img/dbp/day-03.png) center center no-repeat
+}
+
+.zone-1 .slider .slider__day .slider__item:nth-last-child(6):before {
+    background: url(../img/dbp/day-02.png) center center no-repeat
+}
+
+.zone-1 .slider .slider__day .slider__item:nth-last-child(7):before {
+    background: url(../img/dbp/day-01.png) center center no-repeat
+}
+
+.zone-1 .slider .slider__day .slider__item.swiper-slide-active:before {
+    background: url(../img/dbp/day-active.png) center center no-repeat;
+    width: 500px
+}
+
+.zone-1 .slider .slider__day .slider__item .item__day {
+    color: var(--Gray-White, #fff);
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, .8);
+    font-family: "BigShouldersStencilText", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 130%;
+    text-transform: uppercase;
+    width: 100px;
+    margin-left: -5px;
+}
+
+.zone-1 .slider .slider__day .slider__item .item__desc {
+    text-indent: 20px;
+    color: var(--Gray-White, #fff);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    display: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.zone-1 .slider .slider__day .slider__item .item__day,
+.zone-1 .slider .slider__day .slider__item .item__desc {
+    position: relative;
+    display: inline-block;
+    transform: skew(24deg);
+}
+
+.zone-1 .slider .slider__day .slider__item.swiper-slide-active {
+    width: 330px;
+    border: 3px solid #ffc107
+}
+
+.zone-1 .slider .slider__day .slider__item.swiper-slide-active .item__day {
+    margin-left: -40px;
+    color: #ffc107
+}
+
+.zone-1 .slider .slider__day .slider__item.swiper-slide-active .item__desc {
+    display: block;
+    text-align: center
+}
+
+.zone-1 .slider .swiper-button-next,
+.zone-1 .slider .swiper-button-prev {
+    font-size: 0;
+    position: absolute;
+    top: 78px;
+    color: #000;
+    z-index: 999;
+    width: 30px;
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    padding: 10px;
+    border-radius: 99px
+}
+
+.zone-1 .slider .swiper-button-next::after,
+.zone-1 .slider .swiper-button-prev::after {
+    font-family: icomoon;
+     src: url('path/to/icomoon.woff2') format('woff2'),
+         url('path/to/icomoon.ttf') format('truetype');
+    position: absolute;
+    font-size: 30px;
+}
+
+.zone-1 .slider .swiper-button-next:hover,
+.zone-1 .slider .swiper-button-prev:hover {
+    color: #C77900;
+}
+
+.zone-1 .slider .swiper-button-next {
+    right: 10px;
+}
+
+.zone-1 .slider .swiper-button-next:after {
+    content: "\e93d";
+}
+
+.zone-1 .slider.swiper-button-prev {
+    left: 0;
+}
+
+.zone-1 .slider .swiper-button-prev:after {
+    content: "\e93c";
+}
