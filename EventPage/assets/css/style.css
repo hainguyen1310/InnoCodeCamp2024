@@ -426,3 +426,11 @@ body {
     line-height: normal;
     margin: 0 250px;
 }
+#videocontent{
+    display: flex;
+    justify-content: center;
+}
+#videocontent .videocontent__play{
+    width: 60%;
+    margin-top: 100px;
+}
