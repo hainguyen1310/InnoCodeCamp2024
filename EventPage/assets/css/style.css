@@ -48,7 +48,8 @@ body {
 #slider__text {
     position: absolute;
     font-size: 7em;
-    color: #C3413F;;
+    color: #C3413F;
+    ;
     text-align: center;
     text-shadow: 2px 2px 2px rgba(22, 22, 23, 0.75);
     font-family: "Playfair Display";
@@ -246,7 +247,6 @@ body {
 }
 
 .timeline__content-title {
-
     font-size: 66px;
     transition: .4s;
     padding: 0 10px;
@@ -255,7 +255,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-shadow: 2px 2px 2px rgba(22, 22, 23, 0.75);
+    text-shadow: 4px -2px 7px white;
 }
 
 .timeline__content-desc {
@@ -426,11 +426,34 @@ body {
     line-height: normal;
     margin: 0 250px;
 }
-#videocontent{
+
+.videocontent {
     display: flex;
     justify-content: center;
+    margin-bottom: 200px;
 }
-#videocontent .videocontent__play{
+
+.videocontent__play {
     width: 60%;
-    margin-top: 100px;
+    z-index: 2;
+}
+
+.videocontent__title {
+    color: #C3413F;
+    text-shadow: 8px 4px 6px rgba(255, 255, 255, 0.25);
+    font-family: "Playfair Display";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px 0px 0px 19%;
+}
+
+img.trongdong {
+    width: 20%;
+    opacity: 0.2;
+}
+
+div#content_video {
+    display: block;
 }
