@@ -660,6 +660,7 @@ iframe {
 .logo {
     display: flex;
     align-items: center;
+    margin-right: 60px;
 }
 
 .logo h1{
