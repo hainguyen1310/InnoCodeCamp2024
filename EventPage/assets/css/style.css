@@ -755,6 +755,7 @@ iframe {
     padding: 10px 20px;
     display: block;
     color: #EEE4DA;
+    font-size: 18px;
 }
 
 .nav ul ul {
@@ -795,4 +796,9 @@ iframe {
 
 .nav ul ul li a:hover::before {
     inset: 0;
+}
+
+/* Fix content */
+.timeline__content--left{
+    margin-left: 110px;
 }
