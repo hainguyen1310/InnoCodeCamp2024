@@ -11,33 +11,34 @@
 <body>
     <header class="header">
         <div class="nav">
-            <nav class="flex flex-wrap gap-0 text-sm
-            *:py-2
-            *:px-4
-            *:relative
-            *:isolate 
-            *:cursor-pointer
-            *:whitespace-nowrap
-            before:*:absolute
-            before:*:w-full
-            before:*:h-1
-            before:*:left-0
-            before:*:bottom-0
-            before:*:bg-purple-400
-            before:*:rounded-full
-            before:*:transition-all
-            before:*:duration-500
-            before:*:ease-[cubic-bezier(.47,1.64,.38,.87)]
-            before:*:scale-0
-            before:*:origin-left 
-            hover:before:*:scale-100
-        ">
-                <label id="toggle-1" for="radio-1" data-radio="radio-1">Thời Kỳ Lịch Sử</label>
-                <label id="toggle-2" for="radio-2" data-radio="radio-2">Nhân Vật Lịch Sử</label>
+            <nav class="flex flex-wrap gap-0 text-sm">
+                <ul>
+                    <li>
+                        <a href="#">Thời Kỳ Lịch Sử</a>
+                        <ul>
+                            <li><a href="#">Thời kỳ hiện đại (1975 - nay)</a></li>
+                            <li><a href="#">Thời kỳ thuộc địa và kháng chiến (1858 - 1975)</a></li>
+                            <li><a href="#">Thời kỳ Độc lập và phát triển (938 - 1858)</a></li>
+                            <li><a href="#">Thời kỳ Bắc thuộc (207 TCN - 938 SCN)</a></li>
+                            <li><a href="#">Thời kỳ Văn Lang - Âu Lạc (2879 TCN - 258 TCN)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Nhân Vật Lịch Sử</a>
+                        <ul>
+                            <li><a href="#">Hồ Chí Minh</a></li>
+                            <li><a href="#">Trưng Trắc và Trưng Nhị</a></li>
+                            <li><a href="#">Ngô Quyền</a></li>
+                            <li><a href="#">Lê Lợi</a></li>
+                            <li><a href="#">Nguyễn Trãi</a></li>
+                            <li><a href="#">Quang Trung (Nguyễn Huệ)</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </nav>
             <div class="logo">
-                <img src="/HeaderFooter/Header/assets/img/LOGO_(1).png" alt="logo">
-                <h1> Soi Dấu Chân Sử</h1>
+                <a href="#"><img src="/HeaderFooter/Header/assets/img/LOGO_(1).png" alt="logo"></a>
+                <h1>Soi Dấu Chân Sử</h1>
             </div>
             <div class="app-controls search-control app-desktop-search-control">
                 <form class="search-form ino-suggestion">
@@ -49,192 +50,10 @@
                 </form>
             </div>
         </div>
-        <section class="grid [grid-template-areas:'stack']
-                [&>article]:[grid-area:stack]
-                [&>article]:transition-all
-                [&>article]:duration-500
-                [&>article>div]:scale-0
-                [&>article>div]:origin-top
-                [&>article>div]:transition-all
-                [&>article>div]:duration-500
-                [&>input:checked+article>div]:ease-[cubic-bezier(.47,1.64,.38,.87)]
-                [&>input:checked+article>div]:scale-100
-                [&>input:checked+article>div]:delay-500
-                [&>input:checked+article>div:nth-child(2)]:delay-[800ms]
-                [&>input:checked+article>div:nth-child(3)]:delay-[1100ms]
-                [&>input:checked+article>div:nth-child(4)]:delay-[1400ms]
-                [&>article]:grid
-                [&>article]:grid-cols-1
-                min-[400px]:[&>article]:grid-cols-2
-                sm:[&>article]:grid-cols-4
-                [&>article]:gap-4
-                [&_h3]:font-medium
-                [&_h3]:mb-2
-                [&_h3]:text-sm
-                [&_h3]:px-3
-
-                [&_a]:font-thin
-                [&_a]:text-sm
-                [&_a]:py-1 
-                [&_a]:px-3
-                [&_a]:relative
-                [&_a]:isolate 
-                [&_a]:block 
-
-                before:[&_a]:absolute
-                before:[&_a]:inset-[0_100%_0_0]
-                before:[&_a]:bg-gradient-to-r
-                before:[&_a]:from-purple-300
-                before:[&_a]:to-purple-transparent
-                before:[&_a]:-z-10
-                before:[&_a]:rounded-md
-                before:[&_a]:transition-all
-                before:[&_a]:duration-500
-                before:[&_a]:ease-in-out
-                hover:before:[&_a]:inset-0
-            ">
-            <!-- furniture -->
-            <input type="radio" id="radio-1" name="panel-toggle" class="sr-only">
-            <article id="panel-1" class="panel">
-                <div>
-                    <h3>Living Room</h3>
-                    <ul>
-                        <li><a href="#">Sofas</a></li>
-                        <li><a href="#">Coffee Tables</a></li>
-                        <li><a href="#">TV Stands</a></li>
-                        <li><a href="#">Bookshelves</a></li>
-                        <li><a href="#">Rugs</a></li>
-                        <li><a href="#">Curtains</a></li>
-                        <li><a href="#">Lamps</a></li>
-                        <li><a href="#">Wall Art</a></li>
-                        <li><a href="#">Chairs</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3>Kitchen</h3>
-                    <ul>
-                        <li><a href="#">Cookware</a></li>
-                        <li><a href="#">Cutlery</a></li>
-                        <li><a href="#">Appliances</a></li>
-                        <li><a href="#">Storage Solutions</a></li>
-                        <li><a href="#">Dining Tables</a></li>
-                        <li><a href="#">Chairs</a></li>
-                        <li><a href="#">Kitchen Islands</a></li>
-                        <li><a href="#">Tableware</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3>Bedroom</h3>
-                    <ul>
-                        <li><a href="#">Beds</a></li>
-                        <li><a href="#">Wardrobes</a></li>
-                        <li><a href="#">Dressers</a></li>
-                        <li><a href="#">Nightstands</a></li>
-                        <li><a href="#">Bedding</a></li>
-                        <li><a href="#">Mirrors</a></li>
-                        <li><a href="#">Lamps</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3>Entrance & Hallways</h3>
-                    <ul>
-                        <li><a href="#">Console Tables</a></li>
-                        <li><a href="#">Coat Racks</a></li>
-                        <li><a href="#">Shoe Storage</a></li>
-                        <li><a href="#">Mirrors</a></li>
-                        <li><a href="#">Rugs</a></li>
-                        <li><a href="#">Lighting</a></li>
-                    </ul>
-                </div>
-
-            </article>
-
-            <!-- ligning -->
-            <input type="radio" id="radio-2" name="panel-toggle" class="sr-only">
-            <article id="panel-2" class="panel">
-                <div>
-                    <h3>Interior</h3>
-                    <ul>
-                        <li><a href="#">Ceiling Lights</a></li>
-                        <li><a href="#">Pendant Lights</a></li>
-                        <li><a href="#">Chandeliers</a></li>
-                        <li><a href="#">Recessed Lighting</a></li>
-                        <li><a href="#">Track Lighting</a></li>
-                        <li><a href="#">Wall Sconces</a></li>
-                        <li><a href="#">Table Lamps</a></li>
-                        <li><a href="#">Floor Lamps</a></li>
-                        <li><a href="#">Under Cabinet Lighting</a></li>
-                        <li><a href="#">Accent Lighting</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3>Exterior</h3>
-                    <ul>
-                        <li><a href="#">Outdoor Wall Lights</a></li>
-                        <li><a href="#">Outdoor Ceiling Lights</a></li>
-                        <li><a href="#">Landscape Lighting</a></li>
-                        <li><a href="#">Pathway Lights</a></li>
-                        <li><a href="#">Deck & Step Lights</a></li>
-                        <li><a href="#">Outdoor Post Lights</a></li>
-                        <li><a href="#">Security Lights</a></li>
-                        <li><a href="#">Flood Lights</a></li>
-                        <li><a href="#">String Lights</a></li>
-                        <li><a href="#">Solar Lights</a></li>
-                    </ul>
-                </div>
-
-            </article>
-        </section>
     </header>
 
     <script src="https://kit.fontawesome.com/e296e6fe82.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        document.querySelectorAll('nav label').forEach(label => {
-            const radioId = label.getAttribute('data-radio');
-            const panelId = `panel-${radioId.split('-')[1]}`;
-            const panel = document.getElementById(panelId);
-
-            let isHoveredLabel = false;
-            let isHoveredPanel = false;
-
-            const showPanel = () => {
-                document.getElementById(radioId).checked = true;
-                panel.classList.add('show');
-            };
-
-            const hidePanel = () => {
-                if (!isHoveredLabel && !isHoveredPanel) {
-                    document.getElementById(radioId).checked = false;
-                    panel.classList.remove('show');
-                }
-            };
-
-            label.addEventListener('mouseover', () => {
-                isHoveredLabel = true;
-                showPanel();
-            });
-
-            label.addEventListener('mouseout', () => {
-                isHoveredLabel = false;
-                setTimeout(hidePanel, 200);
-            });
-
-            panel.addEventListener('mouseover', () => {
-                isHoveredPanel = true;
-                showPanel();
-            });
-
-            panel.addEventListener('mouseout', () => {
-                isHoveredPanel = false;
-                setTimeout(hidePanel, 200);
-            });
-        });
-    </script>
 </body>
 
 </html>
