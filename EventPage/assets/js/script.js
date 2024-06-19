@@ -163,4 +163,15 @@ document.addEventListener("scroll", function() {
 
 $("#timeline-1").timeline();
 
-  
+document.addEventListener("DOMContentLoaded", function () {
+  const musicParent = document.querySelector(".music-parent");
+  const musicPlayer = document.querySelector(".music-player");
+
+  musicParent.addEventListener("click", function () {
+      if (musicPlayer.style.display === "none" || !musicPlayer.style.display) {
+          musicPlayer.style.display = "block";
+      } else {
+          musicPlayer.style.display = "none";
+      }
+  });
+});
