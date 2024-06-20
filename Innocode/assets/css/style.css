@@ -311,7 +311,7 @@ html {
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  padding: 1rem;
+  padding: 1.5rem;
   width: 100%;
   text-align: center;
   color: #EEE4DA;
@@ -385,7 +385,7 @@ html {
 }
 
 .card:nth-child(4):before {
-  background-image: url(img/bacvatre.png);
+  background-image: url(/Innocode/assets/img/bacvatre.png);
 }
 
 .content {
