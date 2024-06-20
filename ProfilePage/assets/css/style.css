@@ -401,7 +401,7 @@ html {
 }
 
 .card:nth-child(4):before {
-  background-image: url(/InnoCodeCamp2024/ProfilePage/img/bacvatre.png);
+  background-image: url(/InnoCodeCamp2024/ProfilePage/assets/img/bacvatre.png);
 }
 
 .content {
