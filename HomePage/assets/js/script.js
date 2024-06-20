@@ -86,9 +86,11 @@ $("#timeline-1").timeline();
       bgImg.style.transform = "scale(" + scale + ")";
       underSmoke.style.marginTop = value * 0.2 + "px";
       topSmoke.style.marginTop = -value * 0.2 + "px";
+      topSmoke.style.overflow = "hidden";
     } else {
       bgImg.style.transform = "scale(1)";
-      
+      underSmoke.style.marginTop = 0 + "px";
+      topSmoke.style.marginTop = 0 + "px";
     }
   });
 })();

@@ -12,9 +12,56 @@
   <!--- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="/EventPage/assets/img/LOGO_(1).png" type="image/x-icon">
 </head>
 
 <body>
+  <header class="header">
+    <div class="nav">
+      <nav class="flex flex-wrap gap-0 text-sm">
+        <ul>
+          <li>
+            <a href="#">Thời Kỳ Lịch Sử</a>
+            <ul>
+              <li><a href="#">Thời kỳ hiện đại (1975 - nay)</a></li>
+              <li><a href="#">Thời kỳ thuộc địa và kháng chiến (1858 - 1975)</a></li>
+              <li><a href="#">Thời kỳ Độc lập và phát triển (938 - 1858)</a></li>
+              <li><a href="#">Thời kỳ Bắc thuộc (207 TCN - 938 SCN)</a></li>
+              <li><a href="#">Thời kỳ Văn Lang - Âu Lạc (2879 TCN - 258 TCN)</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Nhân Vật Lịch Sử</a>
+            <ul>
+              <li><a href="/ProfilePage/index.html">Hồ Chí Minh</a></li>
+              <li><a href="#">Trưng Trắc và Trưng Nhị</a></li>
+              <li><a href="#">Ngô Quyền</a></li>
+              <li><a href="#">Lê Lợi</a></li>
+              <li><a href="#">Nguyễn Trãi</a></li>
+              <li><a href="#">Quang Trung (Nguyễn Huệ)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <a href="/index.html"><img src="/EventPage/assets/img/LOGO_(1).png" alt="logo"></a>
+        <a href="/index.html"><h1>Soi Dấu Chân Sử</h1></a>
+      </div>
+      <div class="app-controls search-control app-desktop-search-control">
+        <form class="search-form ino-suggestion">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <input type="text" placeholder="Search an event" class="search-typing">
+          <div class="ino-suggestion__box show"></div>
+        </form>
+      </div>
+    </div>
+  </header>
   <div class="wapper">
 
     <!-- <div class="title-web">
@@ -977,17 +1024,19 @@
     </div>
     <div class="timeline">
       <div class="timeline-item" data-text="Lịch sử phong kiến Việt Nam (939 - 1858)">
-        <div class="timeline__content">
-          <img class="timeline__img" src="http://bachdanggiang.vn/wp-content/uploads/2019/12/su-kienls3-1.png"
-            alt="Nơi sinh của Bác Hồ" />
-          <h2 class="timeline__content-title">1939-1858</h2>
-          <p class="timeline__content-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quod
-            laborum illum atque doloremque quas dicta dolor tempora reiciendis
-            nobis quaerat ex distinctio quia odio aut rerum animi obcaecati
-            assumenda.
-          </p>
-        </div>
+        <a href="/EventPage/index.html">
+          <div class="timeline__content">
+            <img class="timeline__img" src="http://bachdanggiang.vn/wp-content/uploads/2019/12/su-kienls3-1.png"
+              alt="" />
+            <h2 class="timeline__content-title">1939-1858</h2>
+            <p class="timeline__content-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quod
+              laborum illum atque doloremque quas dicta dolor tempora reiciendis
+              nobis quaerat ex distinctio quia odio aut rerum animi obcaecati
+              assumenda.
+            </p>
+          </div>
+        </a>
       </div>
       <div class="timeline-item" data-text="Việt Nam thời kỳ chia cắt (1527 - 1802)
         ">
@@ -1069,120 +1118,132 @@
       </div>
     </div>
   </div>
-  <div class="text-slide">
-    <h2 class="slider-text">Giai đoạn 1945-nay</h2>
+  <div class="footer">
+    <div id="share" class="share-parent">
+      <div class="info-txt-ap">Được tạo bởi <a href="#">Cầm kì thi họa team</a></div>
+      <div class="copy-link">
+        <h1 class="head-link">
+          soidauchansu.io</h1>
+        <div class="info-txt"><a href="#" class="back-to-top w--current">Back
+            to top</a></div>
+      </div>
+      <div class="draw-line-top">
+        <div class="draw-line-inner-top">
+        </div>
+      </div>
+    </div>
   </div>
   <script src="https://kit.fontawesome.com/e296e6fe82.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="/HomePage/assets/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 6,
-        spaceBetween: 25,
-        loop: true,
-        centeredSlides: true,
-        centerSlide: 'true',
-        fade: 'true',
-        grabCursor: 'true',
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            dynamicBullets: true,
+      slidesPerView: 6,
+      spaceBetween: 25,
+      loop: true,
+      centeredSlides: true,
+      centerSlide: 'true',
+      fade: 'true',
+      grabCursor: 'true',
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
         },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+        520: {
+          slidesPerView: 3,
         },
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-            },
-            520: {
-                slidesPerView: 3,
-            },
-            950: {
-                slidesPerView: 6,
-            }
-        },
-        on: {
-            init: function () {
-                adjustTranslate(this);
-            },
-            slideChangeTransitionEnd: function () {
-                adjustTranslate(this);
-            }
+        950: {
+          slidesPerView: 6,
         }
+      },
+      on: {
+        init: function () {
+          adjustTranslate(this);
+        },
+        slideChangeTransitionEnd: function () {
+          adjustTranslate(this);
+        }
+      }
     });
 
     var swiperContent = new Swiper(".content-slider", {
-        speed: 1500,
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 30,
-        allowTouchMove: false,
-        autoHeight: true,
+      speed: 1500,
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      allowTouchMove: false,
+      autoHeight: true,
     });
 
     function syncContent(index) {
-        swiperContent.slideTo(index);
+      swiperContent.slideTo(index);
     }
 
     document.querySelector('.swiper-button-next').addEventListener('click', function () {
-        var activeSlide = document.querySelector('.swiper-slide-active');
-        if (activeSlide) {
-            var ariaLabel = activeSlide.getAttribute('aria-label');
-            var numberBeforeSlash = ariaLabel.split('/')[0];
-            syncContent(numberBeforeSlash-1);
-        }
+      var activeSlide = document.querySelector('.swiper-slide-active');
+      if (activeSlide) {
+        var ariaLabel = activeSlide.getAttribute('aria-label');
+        var numberBeforeSlash = ariaLabel.split('/')[0];
+        syncContent(numberBeforeSlash - 1);
+      }
     });
 
     document.querySelector('.swiper-button-prev').addEventListener('click', function () {
-        var activeSlide = document.querySelector('.swiper-slide-active');
-        if (activeSlide) {
-            var ariaLabel = activeSlide.getAttribute('aria-label');
-            var numberBeforeSlash = ariaLabel.split('/')[0];
-            syncContent(numberBeforeSlash-1);
-        }
+      var activeSlide = document.querySelector('.swiper-slide-active');
+      if (activeSlide) {
+        var ariaLabel = activeSlide.getAttribute('aria-label');
+        var numberBeforeSlash = ariaLabel.split('/')[0];
+        syncContent(numberBeforeSlash - 1);
+      }
     });
 
     function navigatePrevious() {
-            const prevButton = document.querySelector('.swiper-button-prev');
-            if (prevButton) {
-                prevButton.click();
-            }
-        }
+      const prevButton = document.querySelector('.swiper-button-prev');
+      if (prevButton) {
+        prevButton.click();
+      }
+    }
 
-        function navigateNext() {
-            const nextButton = document.querySelector('.swiper-button-next');
-            if (nextButton) {
-                nextButton.click();
-            }
-        }
+    function navigateNext() {
+      const nextButton = document.querySelector('.swiper-button-next');
+      if (nextButton) {
+        nextButton.click();
+      }
+    }
 
-        document.addEventListener('keydown', function (event) {
-            switch (event.key) {
-                case 'ArrowLeft':
-                    navigatePrevious();
-                    break;
-                case 'ArrowRight':
-                    navigateNext();
-                    break;
-                default:
-                    break;
-            }
-        });
+    document.addEventListener('keydown', function (event) {
+      switch (event.key) {
+        case 'ArrowLeft':
+          navigatePrevious();
+          break;
+        case 'ArrowRight':
+          navigateNext();
+          break;
+        default:
+          break;
+      }
+    });
 
     function adjustTranslate(swiper) {
-        const wrapper = swiper.wrapperEl;
-        const currentTransform = wrapper.style.transform;
-        const translateXMatch = currentTransform.match(/translate3d\(([-\d.]+)px,/);
-        let currentTranslateX = translateXMatch ? parseFloat(translateXMatch[1]) : 0;
-        currentTranslateX -= 81;
-        wrapper.style.transform = `translate3d(${currentTranslateX}px, 0, 0)`;
-        wrapper.style.transition = `transform 0.5s ease`;
+      const wrapper = swiper.wrapperEl;
+      const currentTransform = wrapper.style.transform;
+      const translateXMatch = currentTransform.match(/translate3d\(([-\d.]+)px,/);
+      let currentTranslateX = translateXMatch ? parseFloat(translateXMatch[1]) : 0;
+      currentTranslateX -= 81;
+      wrapper.style.transform = `translate3d(${currentTranslateX}px, 0, 0)`;
+      wrapper.style.transition = `transform 0.5s ease`;
     }
-</script>
+  </script>
 </body>
 
 </html>
