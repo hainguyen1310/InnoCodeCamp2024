@@ -14,7 +14,7 @@
     justify-content: center;
     /* background-color: azure; */
     /* padding-top: 20px; */
-    /* background-color: #EEE4DA; */
+    background-color: #EEE4DA;
     padding-top: 80px;
 }
 .wapper .title-web{
@@ -38,7 +38,7 @@
     /* border-radius: 25px; */
 }
 .card{
-    /* border-radius: 25px; */  
+    border-radius: 25px;  
     background-color: #fff; 
 }
 .card.swiper-slide-active {
@@ -63,11 +63,11 @@ padding: 10px 14px;
     width: 100%;
     height: 100%;
     /* background-color: #4070f4; */
-    background: url("./Img/hiennay.jpg");
+    background: url("../Img-Slider/hiennay.jpg");
     opacity: 0.8;
     left: 0;
     top: 0;
-    /* border-radius: 25px 25px 0 25px; */
+    border-radius: 25px 25px 0 0;
 }
 /* .overlay::before,
 .overlay::after{
@@ -86,11 +86,15 @@ padding: 10px 14px;
 } */
  .card-image{
      position: relative;
-     height: 150px;
-     width: 150px;
+     height: 110px;
+     width: 110px;
      background-color: transparent;
      /* border-radius: 50%; */
      /* border: solid 2px #fff; */
+ }
+ .swiper-slide-active .card-image{
+    height: 150px;
+     width: 150px;
  }
  .card-image .card-img{
     width: 100%;
@@ -126,6 +130,7 @@ padding: 10px 14px;
     height: 100px;
     position: relative;
     background-color: #EEE4DA;
+    border-radius: 0 0 25px 25px;
 }
 .card-content .button{
     border: none;
@@ -184,7 +189,7 @@ padding: 10px 14px;
 }
 
 .content__img--honghacphai {
-    background-image: url("./Img/honghacphai.png");
+    background-image: url("../Img-Slider/honghacphai.png");
     background-position: 320px 50%;
     background-size: 450px;
     background-repeat: no-repeat;
@@ -199,7 +204,7 @@ padding: 10px 14px;
 }
 
 .content__img--honghacphai:nth-child(2) {
-    background-image: url("./Img/honghacphai.png");
+    background-image: url("../Img-Slider/honghacphai.png");
     background-position: 320px 50%;
     background-size: 450px;
     background-repeat: no-repeat;
@@ -214,7 +219,7 @@ padding: 10px 14px;
 }
 
 .content__img--honghactrai2 {
-    background-image: url("./Img/honghactrai.png");
+    background-image: url("../Img-Slider/honghactrai.png");
     background-position: 50px 0px;
     background-size: 450px;
     background-repeat: no-repeat;
@@ -229,7 +234,7 @@ padding: 10px 14px;
 }
 
 .content__img--honghactrai2:last-of-type {
-    background-image: url("./Img/honghactrai.png");
+    background-image: url("../Img-Slider/honghactrai.png");
     background-position: 50px 0px;
     background-size: 450px;
     background-repeat: no-repeat;

@@ -1146,6 +1146,33 @@
         }
     });
 
+    function navigatePrevious() {
+            const prevButton = document.querySelector('.swiper-button-prev');
+            if (prevButton) {
+                prevButton.click();
+            }
+        }
+
+        function navigateNext() {
+            const nextButton = document.querySelector('.swiper-button-next');
+            if (nextButton) {
+                nextButton.click();
+            }
+        }
+
+        document.addEventListener('keydown', function (event) {
+            switch (event.key) {
+                case 'ArrowLeft':
+                    navigatePrevious();
+                    break;
+                case 'ArrowRight':
+                    navigateNext();
+                    break;
+                default:
+                    break;
+            }
+        });
+
     function adjustTranslate(swiper) {
         const wrapper = swiper.wrapperEl;
         const currentTransform = wrapper.style.transform;
