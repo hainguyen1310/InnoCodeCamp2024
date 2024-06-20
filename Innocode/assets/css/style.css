@@ -29,11 +29,22 @@ html {
   background-image: url(/Innocode/assets/img/back.png);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 77vh;
   text-align: center;
   background-color: #EEE4DA;
-  padding-top: 100px;
   z-index: 1;
+}
+
+.circle-img {
+  position: absolute;
+  width: 290px;
+  height: 280px;
+  top: 380px;
+  border-radius: 50%;
+  border: 5px solid #eee4da;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
 }
 
 .quote {
@@ -81,18 +92,6 @@ html {
   width: 200px;
   height: 300px;
   border-radius: 8px;
-}
-
-.circle-img {
-  position: absolute;
-  width: 240px;
-  height: 225px;
-  top: 245px;
-  border-radius: 50%;
-  border: 5px solid #eee4da;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
 }
 
 /* Time Line */
