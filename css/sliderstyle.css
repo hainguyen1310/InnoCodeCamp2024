@@ -63,7 +63,7 @@ padding: 10px 14px;
     width: 100%;
     height: 100%;
     /* background-color: #4070f4; */
-    background: url("../Img-Slider/hiennay.jpg");
+    background: url("/Img-Slider/hiennay.jpg");
     opacity: 0.8;
     left: 0;
     top: 0;
@@ -189,7 +189,7 @@ padding: 10px 14px;
 }
 
 .content__img--honghacphai {
-    background-image: url("../Img-Slider/honghacphai.png");
+    background-image: url("/Img-Slider/honghacphai.png");
     background-position: 320px 50%;
     background-size: 450px;
     background-repeat: no-repeat;
@@ -204,7 +204,7 @@ padding: 10px 14px;
 }
 
 .content__img--honghacphai:nth-child(2) {
-    background-image: url("../Img-Slider/honghacphai.png");
+    background-image: url("/Img-Slider/honghacphai.png");
     background-position: 320px 50%;
     background-size: 450px;
     background-repeat: no-repeat;
@@ -219,7 +219,7 @@ padding: 10px 14px;
 }
 
 .content__img--honghactrai2 {
-    background-image: url("../Img-Slider/honghactrai.png");
+    background-image: url("/Img-Slider/honghactrai.png");
     background-position: 50px 0px;
     background-size: 450px;
     background-repeat: no-repeat;
@@ -234,7 +234,7 @@ padding: 10px 14px;
 }
 
 .content__img--honghactrai2:last-of-type {
-    background-image: url("../Img-Slider/honghactrai.png");
+    background-image: url("/Img-Slider/honghactrai.png");
     background-position: 50px 0px;
     background-size: 450px;
     background-repeat: no-repeat;

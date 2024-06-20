@@ -26,7 +26,7 @@ html {
 }
 
 .header1 {
-  background-image: url(/ProfilePage/assets/img/back.png);
+  background-image: url(assets/img/back.png);
   background-size: cover;
   background-position: center;
   height: 77vh;
@@ -401,7 +401,7 @@ html {
 }
 
 .card:nth-child(4):before {
-  background-image: url(/ProfilePage/assets/img/bacvatre.png);
+  background-image: url(assets/img/bacvatre.png);
 }
 
 .content {

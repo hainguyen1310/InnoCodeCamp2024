@@ -80,7 +80,7 @@ body {
 }
 
 #content .content__img--honghactrai {
-    background-image: url(/EventPage/assets/img/honghactrai.png);
+    background-image: url(assets/img/honghactrai.png);
     background-position: 0px 50%;
     background-size: 750px;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@ body {
 }
 
 #content .content__img--honghacphai {
-    background-image: url(/EventPage/assets/img/honghacphai.png);
+    background-image: url(assets/img/honghacphai.png);
     background-position: 0px 50%;
     background-size: 750px;
     background-repeat: no-repeat;
@@ -112,7 +112,7 @@ body {
 }
 
 #content .content__img--honghactrai2 {
-    background-image: url(/EventPage/assets/img/honghactrai.png);
+    background-image: url(assets/img/honghactrai.png);
     background-position: 0px 50%;
     background-size: 750px;
     background-repeat: no-repeat;
