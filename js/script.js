@@ -1,11 +1,6 @@
 (function () {
   "use strict";
-
-  // define variables
   var items = document.querySelectorAll(".timeline li");
-
-  // check if an element is in viewport
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
   function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
@@ -81,8 +76,7 @@ $("#timeline-1").timeline();
     let value = window.scrollY;
 
     if (value >= 750 && value <= 3000) {
-      // Adjust the value as needed
-      var scale = 0.9 + value / 5000; // Adjust the scaling factor as needed
+      var scale = 0.9 + value / 5000; 
       bgImg.style.transform = "scale(" + scale + ")";
       underSmoke.style.marginTop = value * 0.2 + "px";
       topSmoke.style.marginTop = -value * 0.2 + "px";
